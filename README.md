@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PortfolioWebsite
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.0.
@@ -57,3 +58,20 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+## 🛠️ Tech Stack
+
+- 🅰️ Angular 22
+- 🧩 Standalone Components
+- 🎨 HTML5
+- 💅 CSS3
+- 📱 Responsive Design
+- 🔔 SweetAlert2
+- 🔗 REST API Integration
+- 📂 Clean Project Structure
+- ⚡ TypeScript
+- 🔄 RxJS
+- 🌐 HTTP Client
+- 🛡️ Form Validation
+- 🚀 Modern UI/UX
+>>>>>>> a2a58e871f1e3d3ea0c22243dba9791f2e7ebb33
