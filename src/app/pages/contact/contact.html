@@ -1,0 +1,148 @@
+<!-- CONTACT
+<section id="contact">
+  <div class="section-eyebrow">Get in touch</div>
+  <h2 class="section-title">Have a <span class="color">Project Idea?</span></h2>
+  <p class="section-desc">I'm currently available for freelance and full-time opportunities. Let's build something great.</p>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <h3>Let's Work Together</h3>
+      <p>Whether it's a new project, a code review, or just a conversation about tech — my inbox is always open.</p>
+      <div class="contact-row">
+        <div class="contact-icon">✉</div>
+        <div>
+          <span>Email</span>
+          <strong>nirjhor268@gmail.com</strong>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📞</div>
+        <div>
+          <span>Phone</span>
+          <strong>+880 198 435 5744</strong>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📍</div>
+        <div>
+          <span>Location</span>
+          <strong>Dhaka, Bangladesh</strong>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form" onsubmit="return false;">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="John" />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Doe" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="john@example.com" />
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell me about your project..."></textarea>
+      </div>
+      <div class="form-group">
+        <label>Documents</label>
+        <div class="file-upload-wrapper">
+          <input type="file" id="fileInput" class="file-input" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" />
+          <label for="fileInput" class="file-upload-label">
+            <span class="file-icon">📎</span>
+            <span class="file-text">Click to upload or drag files here</span>
+            <span class="file-hint">(PDF, DOC, JPG, PNG)</span>
+          </label>
+          <div class="file-list" id="fileList"></div>
+        </div>
+      </div>
+      <div *ngIf="submitError" style="padding: 12px 16px; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); border-radius: 8px; color: #ef4444; font-size: 13px;">
+        {{ submitError }}
+      </div>
+      <div *ngIf="submitMessage" style="padding: 12px 16px; background: rgba(74,222,128,0.1); border: 1px solid rgba(74,222,128,0.3); border-radius: 8px; color: #4ade80; font-size: 13px;">
+        {{ submitMessage }}
+      </div>
+      <button type="submit" class="btn-primary btn-full" style="padding:14px 22px;font-size:15px;" [disabled]="isSubmitting">
+        {{ isSubmitting ? 'Sending...' : 'Send Message →' }}
+      </button>
+    </form>
+  </div>
+</section> -->
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-eyebrow">Get in touch</div>
+  <h2 class="section-title">Have a <span class="color">Project Idea?</span></h2>
+  <p class="section-desc">I'm currently available for freelance and full-time opportunities. Let's build something great.</p>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <h3>Let's Work Together</h3>
+      <p>Whether it's a new project, a code review, or just a conversation about tech — my inbox is always open.</p>
+      <div class="contact-row">
+        <div class="contact-icon">✉</div>
+        <div>
+          <span>Email</span>
+          <strong>nirjhor268@gmail.com</strong>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📞</div>
+        <div>
+          <span>Phone</span>
+          <strong>+880 198 435 5744</strong>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="contact-icon">📍</div>
+        <div>
+          <span>Location</span>
+          <strong>Dhaka, Bangladesh</strong>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" placeholder="John" [(ngModel)]="firstName" name="firstName" required />
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Doe" [(ngModel)]="lastName" name="lastName" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="john@example.com" [(ngModel)]="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Tell me about your project..." [(ngModel)]="message" name="message" required></textarea>
+      </div>
+      <div class="form-group">
+        <label>Documents</label>
+        <div class="file-upload-wrapper">
+          <input type="file" id="fileInput" #fileInput class="file-input" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" />
+          <label for="fileInput" class="file-upload-label">
+            <span class="file-icon">📎</span>
+            <span class="file-text">Click to upload or drag files here</span>
+            <span class="file-hint">(PDF, DOC, JPG, PNG)</span>
+          </label>
+          <div class="file-list" id="fileList"></div>
+        </div>
+      </div>
+      <div *ngIf="submitError" style="padding: 12px 16px; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); border-radius: 8px; color: #ef4444; font-size: 13px;">
+        {{ submitError }}
+      </div>
+      <div *ngIf="submitMessage" style="padding: 12px 16px; background: rgba(74,222,128,0.1); border: 1px solid rgba(74,222,128,0.3); border-radius: 8px; color: #4ade80; font-size: 13px;">
+        {{ submitMessage }}
+      </div>
+      <button type="submit" class="btn-primary btn-full" style="padding:14px 22px;font-size:15px;" [disabled]="isSubmitting">
+        {{ isSubmitting ? 'Sending...' : 'Send Message →' }}
+      </button>
+    </form>
+  </div>
+</section>

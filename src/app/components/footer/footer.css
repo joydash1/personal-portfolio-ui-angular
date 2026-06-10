@@ -1,0 +1,63 @@
+/* ── FOOTER ── */
+footer {
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  padding: 48px 60px 32px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-col h4 { font-size: 14px; font-weight: 600; margin-bottom: 16px; color: var(--text); }
+.footer-col p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col ul a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color .2s; }
+.footer-col ul a:hover { color: var(--accent2); }
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 13px; color: var(--muted);
+}
+.social-row { display: flex; gap: 12px; }
+.social-row a {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--muted); text-decoration: none;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; transition: all .2s;
+}
+.social-row a:hover { color: var(--accent2); border-color: var(--accent); }
+.logo { font-size: 22px; font-weight: 700; color: var(--text); letter-spacing: -0.5px; }
+.logo span { color: var(--accent2); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  footer { padding: 40px 24px 24px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .footer-col h4 { font-size: 13px; }
+  .footer-col p { font-size: 12px; }
+}
+
+@media (max-width: 640px) {
+  footer { padding: 24px 16px 16px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+  .footer-col h4 { font-size: 12px; }
+  .footer-col p { font-size: 11px; }
+  .footer-col ul a { font-size: 11px; }
+  .footer-bottom { font-size: 11px; flex-direction: column; gap: 8px; }
+  .logo { font-size: 14px; margin-bottom: 8px; }
+  .social-row { gap: 8px; }
+  .social-row a { width: 32px; height: 32px; font-size: 13px; }
+}
+
+@media (max-width: 480px) {
+  footer { padding: 16px 12px 12px; }
+  .footer-grid { gap: 16px; }
+  .footer-col h4 { font-size: 11px; }
+  .footer-col p { font-size: 10px; }
+  .logo { font-size: 13px; }
+  .social-row a { width: 28px; height: 28px; font-size: 12px; }
+}
