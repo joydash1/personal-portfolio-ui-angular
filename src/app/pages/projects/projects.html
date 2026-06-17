@@ -1,48 +1,337 @@
 <!-- PROJECTS -->
 <section class="projects-bg" id="projects">
+
   <div class="section-eyebrow">Portfolio</div>
+
   <h2 class="section-title">My <span class="color">Projects</span></h2>
-  <p class="section-desc">A selection of things I've built — from APIs to full-stack applications.</p>
+
+  <p class="section-desc">
+    A selection of things I've built — from APIs to full-stack enterprise applications.
+  </p>
+
   <div class="projects-grid">
+
+    <!-- 1. REAL ESTATE -->
     <div class="project-card">
+
       <div class="project-header">
-        <div class="project-icon">💳</div>
+        <div class="project-icon">🏢</div>
+
         <div class="project-links">
-          <a href="#" title="GitHub">⇗</a>
-          <a href="#" title="Live">🔗</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" title="GitHub">⇗</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" title="Live Demo">🔗</a>
         </div>
       </div>
-      <h3>Fintech Payment API</h3>
-      <p>A high-throughput payment processing API built with .NET Core Minimal API, JWT auth, MSSQL, and integrated with payment gateways.</p>
-      <div class="tag-list" style="margin-top:16px;">
-        <span class="tag">.NET Core</span><span class="tag">MSSQL</span><span class="tag">JWT</span>
+
+      <h3>Real Estate & Hotel ERP Management System</h3>
+
+      <ul class="project-bullets">
+        <li>
+          Designed and developed a modular ERP system handling end-to-end business operations for Real Estate and Hotel management within a unified platform.
+        </li>
+
+        <li>
+          Implemented core business workflows including land purchase, land credit realization, client management, plot sales, installment processing, and complete ownership transfer with deed generation.
+        </li>
+
+        <li>
+          Built a dynamic multi-module architecture where each module operates independently while sharing a centralized system for real-time business data consistency.
+        </li>
+
+        <li>
+          Integrated financial workflows such as installment tracking, payment collection, and automated money receipt generation with advanced reporting capabilities.
+        </li>
+
+        <li>
+          Structured system with both shared and module-specific database design to ensure scalability, separation of concerns, and optimized performance.
+        </li>
+      </ul>
+      <div class="tag-list">
+
+        <span class="tag">💻 C#</span>
+        <span class="tag">⚙️ ASP.NET MVC</span>
+
+        <span class="tag">🏗 Clean Architecture</span>
+        <span class="tag">📐 SOLID Principles</span>
+
+        <span class="tag">🗂 Repository Pattern</span>
+        <span class="tag">📦 Ado Dot .Net</span>
+        <span class="tag">🧾 Stored Procedure</span>
+
+        <span class="tag">🧱 Entity Framework</span>
+        <span class="tag">🛢 MSSQL</span>
+
+        <span class="tag">🔔 SignalR</span>
+        <span class="tag">📊 Crystal Report</span>
+
+        <span class="tag">⚡ JavaScript / jQuery</span>
+
       </div>
+
+      <div class="project-live-links">
+        <a href="#" target="_blank" rel="noopener noreferrer">Bhaiya Housing Ltd.</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">Probashi Palli Ltd.</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">Biswas Builders Ltd.</a>
+      </div>
+
+      <div class="project-view-btn">
+        <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
     </div>
+
+    <!-- 2. BROKER DASHBOARD -->
     <div class="project-card">
+
       <div class="project-header">
-        <div class="project-icon">🏥</div>
+        <div class="project-icon">📈</div>
+
         <div class="project-links">
-          <a href="#">⇗</a><a href="#">🔗</a>
+          <a href="https://www.eblsecurities.com/" target="_blank" rel="noopener noreferrer" title="GitHub">⇗</a>
+          <a href="https://www.eblsecurities.com/" target="_blank" rel="noopener noreferrer" title="Live Demo">🔗</a>
         </div>
       </div>
-      <h3>Healthcare Management System</h3>
-      <p>Full-stack app with Angular frontend, .NET Core backend, and PostgreSQL. Manages patient records, appointments, and billing.</p>
-      <div class="tag-list" style="margin-top:16px;">
-        <span class="tag">Angular</span><span class="tag">PostgreSQL</span><span class="tag">EF Core</span>
+
+      <h3>Broker House Client Dashboard</h3>
+
+      <ul class="project-bullets">
+        <li>Dynamic admin dashboard with full content control and real-time updates using SignalR.</li>
+        <li>Optimized SQL queries, stored procedures, triggers, and transaction handling for performance.</li>
+        <li>Integrated AJAX-based loading with automated SMS and email notification system.</li>
+      </ul>
+
+      <div class="tag-list">
+
+        <span class="tag">💻 C#</span>
+        <span class="tag">⚙️ ASP.NET Core MVC</span>
+
+        <span class="tag">🏗 Clean Architecture</span>
+        <span class="tag">📐 SOLID Principles</span>
+
+        <span class="tag">🗂 Repository Pattern</span>
+        <span class="tag">📦 Dapper</span>
+        <span class="tag">🧾 Stored Procedure</span>
+
+        <span class="tag">🧱 Entity Framework Core</span>
+        <span class="tag">🛢 MSSQL</span>
+
+        <span class="tag">🔔 SignalR</span>
+        <span class="tag">📊 RDLC Report</span>
+
+        <span class="tag">⚡ JavaScript / jQuery</span>
+
       </div>
+
+      <div class="project-live-links">
+        <a href="https://www.eblsecurities.com/" target="_blank" rel="noopener noreferrer">eblsecurities.com</a>
+        <a href="https://sarsecltd.com/" target="_blank" rel="noopener noreferrer">sarsecltd.com</a>
+      </div>
+
+      <div class="project-view-btn">
+        <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
     </div>
+
+    <!-- 3. EXPENSE TRACKER -->
     <div class="project-card">
+
       <div class="project-header">
         <div class="project-icon">📦</div>
+
         <div class="project-links">
-          <a href="#">⇗</a><a href="#">🔗</a>
+          <a href="https://github.com/joydash1/expense-tracker-clean-architecture-api" target="_blank" rel="noopener noreferrer" title="GitHub">⇗</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" title="Live Demo">🔗</a>
         </div>
       </div>
-      <h3>Inventory Management API</h3>
-      <p>RESTful API for real-time inventory tracking with Clean Architecture, CQRS pattern, and MSSQL. Includes Swagger documentation.</p>
-      <div class="tag-list" style="margin-top:16px;">
-        <span class="tag">C#</span><span class="tag">CQRS</span><span class="tag">Clean Arch</span>
+
+      <h3>Expense Tracker REST API</h3>
+
+      <ul class="project-bullets">
+        <li>Built a scalable REST API using Clean Architecture, SOLID principles, and modular design patterns for maintainability and testability.</li>
+        <li>Implemented JWT-based authentication and role-based authorization to secure API endpoints and control access.</li>
+        <li>Developed core modules for expense and income management with category-based tracking and structured business logic.</li>
+        <li>Applied FluentValidation for robust request validation and ensured clean API request/response handling.</li>
+        <li>Designed layered architecture (API, Core, Infrastructure) with separation of concerns for scalable system design.</li>
+        <li>Optimized database operations using Entity Framework Core with SQL Server for high-performance data access.</li>
+        <li>Implemented Repository Pattern and Unit of Work for clean and maintainable data access logic.</li>
+      </ul>
+
+      <div class="tag-list">
+
+        <span class="tag">💻 C#</span>
+        <span class="tag">⚙️ ASP.NET Core Web API</span>
+
+        <span class="tag">🏗 Clean Architecture</span>
+        <span class="tag">📐 SOLID Principles</span>
+
+        <span class="tag">🗂 Repository Pattern</span>
+        <span class="tag">📦 Unit of Work</span>
+        <span class="tag">🔌 Dependency Injection</span>
+
+        <span class="tag">🔐 JWT Authentication</span>
+        <span class="tag">✅ FluentValidation</span>
+
+        <span class="tag">🧱 Entity Framework Core</span>
+        <span class="tag">🛢 SQL Server</span>
+
       </div>
+
+      <div class="project-view-btn">
+        <a href="https://github.com/joydash1/expense-tracker-clean-architecture-api"
+           target="_blank" rel="noopener noreferrer">
+          View Project
+        </a>
+      </div>
+
     </div>
+
+    <!-- 4. E-COMMERCE -->
+    <div class="project-card">
+
+      <div class="project-header">
+        <div class="project-icon">🛒</div>
+
+        <div class="project-links">
+          <a href="https://github.com/joydash1/Product-Cart-API" target="_blank" rel="noopener noreferrer" title="GitHub">⇗</a>
+          <a href="#" target="_blank" rel="noopener noreferrer" title="Live Demo">🔗</a>
+        </div>
+      </div>
+
+      <h3>E-Commerce Product Card System</h3>
+
+      <ul class="project-bullets">
+        <li>Designed and developed a full-stack e-commerce system using ASP.NET Core Razor Pages integrated with RESTful APIs following a Figma UI template.</li>
+        <li>Implemented core features including product listing, cart management, add to cart, product search, and pagination with seamless backend integration.</li>
+        <li>Built dynamic discount system based on date-range promotions, automatically applying or reverting product pricing based on active offer period.</li>
+      </ul>
+      <div class="tag-list">
+
+        <span class="tag">💻 C#</span>
+        <span class="tag">⚙️ ASP.NET Core 8</span>
+        <span class="tag">📄 Razor Pages</span>
+
+        <span class="tag">🌐 REST API</span>
+        <span class="tag">🏗 Clean Architecture</span>
+        <span class="tag">📐 SOLID Principles</span>
+
+        <span class="tag">🗂 Repository Pattern</span>
+        <span class="tag">📦 Unit of Work</span>
+
+        <span class="tag">🧱 Entity Framework Core</span>
+        <span class="tag">🛢 SQL Server</span>
+
+        <span class="tag">⚡ JavaScript</span>
+        <span class="tag">🔁 jQuery AJAX</span>
+
+      </div>
+      <div class="project-view-btn">
+        <a href="https://github.com/joydash1/Product-Cart-API"
+           target="_blank" rel="noopener noreferrer">
+          View Project
+        </a>
+      </div>
+
+    </div>
+
+    <!-- 5. HOSPITAL -->
+    <div class="project-card">
+
+      <div class="project-header">
+        <div class="project-icon">🏥</div>
+
+        <div class="project-links">
+          <a href="https://github.com/joydash1/hospital-management-clean-architecture-restapi"
+             target="_blank" rel="noopener noreferrer" title="GitHub">⇗</a>
+          <a href="https://github.com/joydash1/hospital-management-clean-architecture-restapi"
+             target="_blank" rel="noopener noreferrer" title="Live Demo">🔗</a>
+        </div>
+      </div>
+
+      <h3>Hospital Management System API</h3>
+
+      <ul class="project-bullets">
+        <li>Designed and developed a scalable Hospital Management System using ASP.NET Core Web API with Clean Architecture (API, Core, Infrastructure layers).</li>
+        <li>Implemented core modules for patient, doctor, appointment, and billing management with structured domain-driven design principles.</li>
+        <li>Enabled real-time communication using SignalR for instant notifications and live appointment updates across the system.</li>
+        <li>Built a conflict-safe appointment scheduling system with validation for rescheduling and availability management.</li>
+        <li>Optimized data access and query performance using a hybrid approach with Entity Framework Core and Dapper.</li>
+        <li>Applied FluentValidation and dependency injection to ensure clean, maintainable, and testable API architecture.</li>
+      </ul>
+
+      <div class="tag-list">
+
+        <span class="tag">💻 C#</span>
+        <span class="tag">⚙️ ASP.NET Core</span>
+        <span class="tag">🌐 REST API</span>
+
+        <span class="tag">🏗 Clean Architecture</span>
+        <span class="tag">📐 SOLID Principles</span>
+
+        <span class="tag">🗂 Repository Pattern</span>
+        <span class="tag">📦 Unit of Work</span>
+
+        <span class="tag">🧱 Entity Framework Core</span>
+        <span class="tag">⚡ Dapper</span>
+
+        <span class="tag">🛢 SQL Server</span>
+        <span class="tag">✅ FluentValidation</span>
+        <span class="tag">🔔 SignalR</span>
+
+      </div>
+      <div class="project-view-btn">
+        <a href="https://github.com/joydash1/hospital-management-clean-architecture-restapi"
+           target="_blank" rel="noopener noreferrer">
+          View Project
+        </a>
+      </div>
+
+    </div>
+
+    <!-- 5. SMTP Mail Server -->
+    <div class="project-card">
+
+      <div class="project-header">
+        <div class="project-icon">🏥</div>
+
+        <div class="project-links">
+          <a href="https://github.com/joydash1/smtp-mailserver-minimal-api"
+             target="_blank" rel="noopener noreferrer" title="GitHub">⇗</a>
+          <a href="https://github.com/joydash1/smtp-mailserver-minimal-api"
+             target="_blank" rel="noopener noreferrer" title="Live Demo">🔗</a>
+        </div>
+      </div>
+
+      <h3>SMTP Mail Server</h3>
+
+      <ul class="project-bullets">
+        <li>Designed and developed a scalable SMTP Mail Server using .NET Core Minimal API with a focus on performance and reliability.</li>
+        <li>Implemented core email sending and receiving functionalities with robust error handling and logging.</li>
+        <li>Integrated with MailKit for seamless SMTP protocol support and enhanced security features.</li>
+        <li>Developed a user-friendly interface for managing email accounts, settings, and delivery reports.</li>
+        <li>Optimized data access and query performance using a hybrid approach with Entity Framework Core.</li>
+        <li>Applied FluentValidation and dependency injection to ensure clean, maintainable, and testable API architecture.</li>
+      </ul>
+
+      <div class="tag-list">
+
+        <span class="tag">💻 C#</span>
+        <span class="tag">⚙️ .NET Core Minimal API</span>
+        <span class="tag">🌐 SMTP</span>
+        <span class="tag">🧱 Entity Framework Core</span>
+        <span class="tag">✅ MailKit SMTP Integration</span>
+        <span class="tag">✅ FluentValidation</span>
+
+      </div>
+      <div class="project-view-btn">
+        <a href="https://github.com/joydash1/smtp-mailserver-minimal-api"
+           target="_blank" rel="noopener noreferrer">
+          View Project
+        </a>
+      </div>
+
+    </div>
+
+
   </div>
 </section>

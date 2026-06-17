@@ -1,0 +1,91 @@
+/* .tech-group span {
+  display: inline-block;
+  font-size: 12px;
+  margin: 3px 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(124,111,247,0.12);
+  color: #7c6ff7;
+  border: 1px solid rgba(124,111,247,0.25);
+  transition: 0.2s;
+}
+
+.tech-group span:hover {
+  transform: scale(1.05);
+  background: rgba(124,111,247,0.25);
+} */
+
+
+.section {
+  padding: 90px 60px;
+}
+
+.section-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent2);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.section-title .color {
+  color: var(--accent2);
+}
+
+.section-desc {
+  color: var(--muted);
+  max-width: 600px;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+/* GRID SYSTEM (ALL SECTIONS USE THIS) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD SYSTEM (UNIVERSAL) */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+/* ICON SYSTEM */
+.icon {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* TAG SYSTEM (TECH STACK) */
+.tag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(124,111,247,0.12);
+  color: var(--accent2);
+  border: 1px solid rgba(124,111,247,0.2);
+  display: inline-block;
+}

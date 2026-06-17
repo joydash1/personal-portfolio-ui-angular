@@ -60,3 +60,21 @@ section { padding: 90px 60px; }
   .timeline::before { left: 0px; }
   .section-title { font-size: 24px; }
 }
+
+.timeline-points{
+  margin-top: 14px;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.timeline-points li{
+  margin-bottom: 8px;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+@media (max-width: 640px){
+  .timeline-points li{
+    font-size: 13px;
+  }
+}

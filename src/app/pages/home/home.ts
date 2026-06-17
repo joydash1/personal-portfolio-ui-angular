@@ -10,7 +10,7 @@ import { ContactCreateDto, ContactResponse, ContactError } from '../../models/co
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './home.html',
-  styleUrls: ['./home.css'],
+  styleUrls: ['./home.css']
 })
 export class HomeComponent implements OnInit, OnDestroy, AfterViewInit {
   @ViewChild('fileInput') fileInput!: ElementRef<HTMLInputElement>;
